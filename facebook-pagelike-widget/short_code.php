@@ -21,7 +21,7 @@ function fb_plugin_shortcode( $atts ) {
     // 2. Enqueue the Facebook SDK and local scripts
     wp_enqueue_style( 'fb-widget-frontend-style', FB_WIDGET_PLUGIN_URL . 'assets/css/style.css' );
     wp_enqueue_script( 'scfbwidgetscript', FB_WIDGET_PLUGIN_URL . 'assets/js/fb.js', array( 'jquery' ), '3.0', true );
-    wp_enqueue_script( 'scfbexternalscript', 'https://connect.facebook.net/' . esc_attr($atts['lang']) . '/sdk.js#xfbml=1&version=v18.0', array(), '1.0', true );
+    wp_enqueue_script( 'scfbexternalscript', 'https://connect.facebook.net/' . esc_attr($atts['lang']) . '/sdk.js#xfbml=1&version=v25.0', array(), '1.0', true );
     
     // 3. Determine container width
     $style_width = ( $atts['data_adapt_container_width'] === 'true' ) ? '100%' : absint( $atts['width'] ) . 'px';

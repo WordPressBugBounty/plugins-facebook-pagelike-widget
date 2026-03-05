@@ -4,7 +4,7 @@ Tags: facebook feeds, facebook like box, facebook like button, facebook feed wid
 Donate link: https://www.paypal.me/MilapPatel
 Requires at least: 3.0.1
 Tested up to: 6.9
-Stable tag: 6.5.1
+Stable tag: 6.5.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -20,7 +20,7 @@ This plugin adds a simple Facebook Page Like Widget to your WordPress sidebar, f
 
 One of the most popular & lightweight plugin for Facebook page feeds widget with over 1.6 Million downloads and 50,000+ active installs.
 
-How to use latest version 6.5.1:
+How to use latest version 6.5.2:
 
 https://www.youtube.com/watch?v=qayeaqlmofA
 
@@ -116,6 +116,9 @@ You can use more parameters like below.
 
 
 == Changelog ==
+
+= Version 6.5.2 =
+* Updated SDK version from 18.0 to 25.0.
 
 = Version 6.5.1 =
 * Removed iframe from Shortcode and implementated Standard (XFBML) method.

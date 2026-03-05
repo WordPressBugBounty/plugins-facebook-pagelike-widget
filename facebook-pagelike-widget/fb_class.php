@@ -56,7 +56,7 @@ class facebook_widget extends WP_Widget {
         // 2. Consistent Script Enqueueing
         // Use the assets/js/ path consistently across the plugin
         wp_enqueue_script( 'scfbwidgetscript', FB_WIDGET_PLUGIN_URL . 'assets/js/fb.js', array( 'jquery' ), '3.0', true );
-        wp_enqueue_script( 'scfbexternalscript', 'https://connect.facebook.net/' . $lang . '/sdk.js#xfbml=1&version=v18.0', array(), '1.0', true );
+        wp_enqueue_script( 'scfbexternalscript', 'https://connect.facebook.net/' . $lang . '/sdk.js#xfbml=1&version=v25.0', array(), '1.0', true );
         
         // 3. Output HTML - Wrapped in .fb-widget-container for style.css compatibility
         ?>
