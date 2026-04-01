@@ -4,7 +4,7 @@
  * Plugin Name: Buttonizer - Social Media Share Buttons, Social Icons, & Social Feeds
  * Plugin URI: https://buttonizer.io
  * Description: Floating Social Media Icons, Sticky Share Buttons, Facebook Feeds, & Popup builder. Also, create Call, Email, SMS, & Contact buttons to increase conversions. Supports WhatsApp, Messenger, Live Chat, and 40+ other actions.
- * Version: 7.0.0
+ * Version: 7.0.1
  * Author: Buttonizer
  * Author URI: https://buttonizer.io
  * License: GPLv2
@@ -25,7 +25,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 // =========================================================================
 // Define Buttonizer constants
 // =========================================================================
-define('BZ_SOCIAL_FEEDS_VERSION', '7.0.0');
+define('BZ_SOCIAL_FEEDS_VERSION', '7.0.1');
 define('BZ_SOCIAL_FEEDS_PLUGIN_FILE', __FILE__);
 
 // =========================================================================
@@ -142,7 +142,7 @@ function bzsf_plugin_uninstall_event()
 
     try {
         // Invalidate access token for security reasons on uninstall
-        (new \BZSocialFeeds\Api\Connection\Disconnect)->disconnect();
+        (new \BZSocialFeeds\Api\Connection\Disconnect)->disconnect(false);
     } catch (\Error $err) {
         // Errored out, nevermind then
     }
