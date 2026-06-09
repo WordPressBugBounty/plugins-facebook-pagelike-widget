@@ -2,8 +2,8 @@
 Contributors: Buttonizer, Milap
 Tags: share, share buttons, social, social media, facebook feeds
 Requires at least: 4.7
-Tested up to: 6.9
-Stable tag: 7.0.1
+Tested up to: 7.0
+Stable tag: 7.0.2
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -300,6 +300,9 @@ Languages can have a different direction of writing and reading? While languages
 
 
 == Changelog ==
+
+= Version 7.0.2 =
+* Bug fixes
 
 = Version 7.0.1 =
 * Bug fixes
